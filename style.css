@@ -872,7 +872,7 @@ header {
     left: 0;
     right: 0;
     width: 100vw;
-    background-color: var(--primaryCol);
+    background-color: #028160;
     transition: max-height 0.2s ease;
     overflow: auto;
   }
