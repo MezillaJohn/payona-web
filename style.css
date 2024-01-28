@@ -205,6 +205,9 @@ header {
 }
 
 .download-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-top: 3rem;
 }
 
@@ -256,12 +259,6 @@ header {
   font-weight: 500;
   margin-bottom: var(--space);
   color: var(--secondaryCol);
-}
-
-.hero-imageBox {
-  /* width: 24rem;
-  position: relative;
-  z-index: 1 !important; */
 }
 
 .hero-image {
@@ -565,7 +562,7 @@ header {
   text-align: center;
 }
 
-.footer-content-wrapper .download-icons {
+.footer-content-wrapper {
   margin-bottom: 4rem;
 }
 
@@ -925,10 +922,6 @@ header {
     font-size: 2rem;
   }
 
-  .download-icons svg {
-    width: 14rem;
-  }
-
   .hero-textBox {
     margin-bottom: 6rem;
     flex: 1;
@@ -1082,12 +1075,12 @@ header {
     font-size: 2.7rem;
   }
 
-  .download-icons svg {
-    width: 11rem;
-  }
-
   .google-play {
     margin-right: var(--space-small);
+  }
+
+  .send__image {
+    width: 30rem;
   }
 
   .exchange__text h4 {
@@ -1133,13 +1126,13 @@ header {
   .exchange__image {
     max-width: 30rem;
   }
+  .terms {
+    width: 100% !important;
+    padding: 0rem 0rem;
+  }
 }
 
 @media only screen and (max-width: 398px) {
-  .download-icons svg {
-    width: 12rem;
-  }
-
   .google-play {
     margin-right: var(--space-smallest);
   }
@@ -1195,12 +1188,54 @@ header {
   }
 }
 
-@media only screen and (max-width: 319px) {
+@media only screen and (max-width: 352px) {
   .assets__coin {
     margin-right: 1rem;
   }
 
-  .download-icons svg {
-    width: 10rem;
+  .download-icons {
+    flex-direction: column;
+  }
+
+  .google-play {
+    margin: 0;
+  }
+
+  .hero-image {
+    height: 400px;
+  }
+
+  .features div {
+    margin-top: 0;
+  }
+
+  .features span {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .exchange__image {
+    max-width: 25rem;
+  }
+
+  .explore-img {
+    max-width: 100px;
+  }
+
+  .subText {
+    font-size: 1.6rem !important;
+  }
+
+  .support__image {
+    max-width: 25rem;
+  }
+
+  .footer-content-wrapper .download-icons {
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 319px) {
+  .assets__coin {
+    margin-right: 1rem;
   }
 }
