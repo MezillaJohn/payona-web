@@ -37,17 +37,22 @@ NavList.addEventListener("click", function (e) {
   e.preventDefault();
 
   if (e.target.classList.contains("nav-link")) {
-    const id = e.target.getAttribute("href");
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-    ToggleClass();
-    Overlay.classList.remove("backdrop");
-  }
-});
+    const href = e.target.getAttribute("href");
 
-faqs.addEventListener("click", function (e) {
-  const clicked = e.target.closest(".faq");
-  clicked.classList.toggle("active");
-  clicked.classList.toggle("rotate");
+    // Check if it's the "Terms & Conditions" link
+    if (href === "./contact.html") {
+      // Navigate to a different page
+      window.location.href = href;
+    } else {
+      // Smooth scroll for other links
+      const id = href.substring(1);
+      if (id) {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+        ToggleClass();
+        Overlay.classList.remove("backdrop");
+      }
+    }
+  }
 });
 ///////////////////////////////////////////
 
