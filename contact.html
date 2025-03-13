@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+
+    <!-- Title icon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <header class="header">
+      <div class="logo">
+        <a class="logoText" href="index.html"
+          ><img class="logo" src="images/logo.png" alt="logo"
+        />Payona</a>
+      </div>
+      <nav class="nav"> 
+        <ul class="nav-links">
+        <li class="nav-item">
+          <a href="/" class='nav-link nav-link-col'>Home</a>
+        </li>
+        </ul>
+    </nav>
+    </header>
+    <section id="Buy-Sell" class="section-styling-one contactForm">
+        <div class="container">
+        <div class="container">
+           <div id="confirmationMessage" style="display: none;"></div>
+          <div class="display-flex">
+            <div class="exchange__text">
+              <h3
+                class="heading-tertiary animate-heading"
+                data-aos="zoom-in"
+                data-aos-duration="600"
+                data-aos-offset="50"
+              >
+                <span>Contact us</span> we are<br />available 24/7
+              </h3>
+              <div class="features">
+                <div>
+                  <span>&check;</span>
+                  <p class="subText">Request a account and data deletion</p>
+                </div>
+
+                <div>
+                  <span>&check;</span>
+                  <p class="subText">Ask us any question</p>
+                </div>
+
+                <div>
+                  <span>&check;</span>
+                  <p class="subText">Comment on our product and services</p>
+                </div>
+
+                <div>
+                  <span>&check;</span>
+                  <p class="subText">Email us at contact@payona.io</p>
+                </div>
+              </div>
+            </div>
+
+            <form action="https://formsubmit.co/8f641ad2a44eaf458e9d5c407d3ec1c6" method="POST" class="form" >
+           <div>
+               <label class="label" for="fullName">Full Name:</label>
+              <input name="name" type="text" id="fullName" name="fullName" required>
+           </div>
+
+            <div>
+                <label  class="label" for="email">Email:</label>
+              <input name="email" type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label  class="label" for="messageTitle">Message Title:</label>
+              <input name="title" type="text" id="messageTitle" name="messageTitle" required>
+            </div>
+
+             <div>
+               <label  class="label" for="message">Message:</label>
+              <textarea name="message" class="textArea" id="message" name="message" rows="4" required></textarea>
+             </div>
+
+              <button class="submit" type="submit">Submit</button>
+
+               <div>
+                <input type="hidden" name="_autoresponse" value="We received your email, we will respond to you shortly.. please find a copy of your request below">
+              <input type="hidden" name="_subject" value="Message from Payona website">
+            </div>
+           
+            <div>
+                 <input type="hidden" name="_cc" value="boblittlegaga@gmail.com">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+            </div>
+            </form>
+          </div>
+          </div>
+      </section>
+    </div>
+    <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/144032659.js"></script>
+<!-- End of HubSpot Embed Code -->
+  </body>
+</html>
